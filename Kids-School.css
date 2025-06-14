@@ -159,6 +159,20 @@ nav li a{
 .middle{
   background: linear-gradient(to bottom, #EEE1FF,#FFFFFF );
 }
+/* arrows */
+.arrow{
+  display: flex;
+  justify-content: center;
+  padding: 60px auto;
+  gap: 10px;
+}
+.arrow-back img , .arrow-forward img{
+  background-color: var(--color-1);
+  border-radius: 50px ;
+  width: 60px;
+  height: 60px;
+}
+
 /* responsive media query */
 @media screen and (max-width:576px) {
 .nav-links {
@@ -264,6 +278,9 @@ nav{
 }
 .read-btn{
   font-size:0.63875rem ;
+}
+.arrow{
+  display: none;
 }
 }
 
