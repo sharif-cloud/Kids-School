@@ -115,9 +115,50 @@ nav li a{
 #towards-vision{
   color: var(--color-2);
 }
+/* curriculum section style */
 
-
-
+.Curriculum-title{
+  font-size: 2.875rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 60px;
+}
+.cur-card-cont{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  margin: 80px 140px;
+}
+.card{
+  padding: 53px 115px;
+  border-radius: 18.86px;
+}
+.card-title{
+  font-size: 1.5325rem;
+  font-weight: 700;
+}
+.card-description{
+  font-size: 0.943125rem;
+  font-weight: 400;
+  color: #808080;
+  width: 100%;
+}
+.read-btn{
+  background-color:white;
+  border: none;
+  font-size:0.943125rem ;
+  font-weight: 700;
+}
+.kinder{
+  background: linear-gradient(to bottom, #DEF5FF,#FFFFFF );
+}
+.elementory{
+  background: linear-gradient(to bottom, #FFF4DC,#FFFFFF );
+}
+.middle{
+  background: linear-gradient(to bottom, #EEE1FF,#FFFFFF );
+}
 /* responsive media query */
 @media screen and (max-width:576px) {
 .nav-links {
@@ -205,7 +246,25 @@ nav{
 .banner-description br {
   display: none;
 }
-
+.cur-card-cont{
+  grid-template-columns: repeat(1, 1fr);
+  margin: 20px 16.5px;
+  gap: auto;
+}
+.card{
+  padding: 36px 28px;
+  border-radius: 12.77px;
+}
+.card-title{
+  font-size: 1.0375rem;
+}
+.card-description{
+  font-size: 0.63875rem;
+  font-weight: 600;
+}
+.read-btn{
+  font-size:0.63875rem ;
+}
 }
 
 /* medium device media query */
@@ -216,5 +275,12 @@ nav{
 .banner{
   margin: 0 60px;
   gap: 15px;
+}
+.cur-card-cont{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  text-align: center;
+  margin: 80px 80px;
 }
 }
