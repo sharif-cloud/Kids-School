@@ -5,3 +5,145 @@
   font-weight: 400;
   font-style: normal;
 }
+:root{
+  --color-1: rgba(254, 163, 1, 1);
+  --color-2: rgba(1, 172, 253, 1);
+  --color-3: rgba(5, 212, 223, 1);
+  --color-4: rgba(93, 88, 239, 1);  
+}
+/*nav style */
+nav{
+  padding: 20px 140px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 62px;
+  width: 202px;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 387px;
+
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 32px;
+}
+nav li a{
+  font-weight: 500;
+  text-decoration: none;
+}
+.nav-title{
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.color-1{
+  color:var(--color-1);
+  font-weight: 700;
+}.color-2{
+  color:var(--color-2);
+}.color-3{
+  color:var(--color-3);
+}.color-4{
+  color:var(--color-4) ;
+}
+.primary-btn{
+  background-color: var(--color-1);
+  font-weight: 600;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  padding: 18px 35px;
+  border-radius: 5px;
+  border: none;
+  height: 50px;
+  width: 197px;
+}
+/* Hamburger */
+#menu-toggle {
+  display: none;
+}
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+.nav-links {
+  display:none ;
+}
+nav{
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--color-1);
+}
+.logo{
+  justify-content: space-between;
+}
+.nav-links.active {
+  display: flex;
+}
+
+.hamburger {
+  display: block;
+}
+.primary-btn, .nav-title{
+  display:none;
+}
+.nav-links {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 16px;
+  left: 16px;
+  background-color: rgb(2, 2, 2, 0.05);
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 999;
+}
+
+#menu-toggle:checked ~ .nav-links {
+  display: flex;
+}
+
+.nav-links ul {
+  flex-direction: row;
+}
+
+.nav-links ul li {
+  margin-left: 20px;
+}
+
+.nav-links .primary-btn {
+  display: flex;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+}
+
+/* medium device media query */
+@media screen and (min-width:577px) and (max-width:990px) {
+  nav{
+    padding: 20px 80px;
+  }
+}
